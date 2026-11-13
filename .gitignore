@@ -1,0 +1,36 @@
+# =============================================================================
+# MATLAB & Simulink Geçici Önbellek (Cache) ve Derleme Dosyaları
+# =============================================================================
+slprj/
+**/slprj/
+*.slxc
+*.asv
+*.autosave
+*~
+*.mex*
+codegen/
+*_ert_rtw/
+*_grt_rtw/
+
+# =============================================================================
+# İşletim Sistemi ve Editör Geçici Dosyaları
+# =============================================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# =============================================================================
+# Büyük Veri Kümesi ve Ham Oturum Dosyaları (Hafif Kurulum Modu)
+# =============================================================================
+# Not 1: Tüm eğitilmiş ağlar (DNN1, DNN2, Random Forest, Multi-SVM),
+#        Classification Learner 35-Model oturumu (PdM_ClassificationLearner_Oturumu.mat - 4 MB),
+#        öznitelik tabloları (PdM_Feature_Table, Feature_Ranking_Table,
+#        PdM_ClassificationLearner_Top12Table) ve 4-sınıf dalga formları
+#        <10 MB olduğu için doğrudan Git deposuna DAHİLDİR ve tüm .mlx / .slx
+#        dosyaları bu hafif dosyalarla %100 sorunsuz çalışır.
+# Not 2: Aşağıdaki 3 büyük ham veri/oturum dosyasını Git LFS ile yüklemek
+#        isterseniz bu satırları yorum satırı (#) yapıp `git lfs track` kullanabilirsiniz:
+**/PdM_DFD_Oturumu.mldatx
+**/PdM_Diagnostic_Ensemble.mat
+**/PdM_ClassificationLearner_Full20_Oturumu.mat
